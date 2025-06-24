@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %} 
+Shivam aur tweet
+{% endblock %}  
+
+
+{% block content %} 
+<h1 class="text-center mt-4">Are you sure you want to delete the tweet ?</h1>
+
+<form method="post">
+<button class="btn btn_danger">delete</button>
+<a class="btn btn_success" href="{% url 'tweet_list' %}">cancel</a>
+</form>
+{% endblock %} 
